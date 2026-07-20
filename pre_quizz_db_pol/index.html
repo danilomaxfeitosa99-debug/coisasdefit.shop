@@ -1,1 +1,352 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zdrowie Dziś | Sprawdź Swój Profil Cukrzycowy</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.7;
+            font-size: 18px;
+        }
+        .advertorial-bar {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.8em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .container {
+            max-width: 680px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 28px 28px 36px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #d32f2f;
+            font-size: 1.7em;
+            text-align: center;
+            margin-bottom: 12px;
+            line-height: 1.25;
+        }
+        .deck {
+            font-size: 1em;
+            color: #444;
+            border-left: 4px solid #d32f2f;
+            padding-left: 14px;
+            margin: 12px 0 20px;
+            font-style: italic;
+            line-height: 1.5;
+        }
+        .author-box {
+            background-color: #f9f9f9;
+            padding: 12px 15px;
+            border-left: 4px solid #2c3e50;
+            margin-bottom: 22px;
+            font-size: 0.85em;
+            color: #555;
+        }
+        p { margin-bottom: 16px; }
+        .danger-box {
+            background-color: #fff5f5;
+            border: 1px solid #ffcccc;
+            border-left: 5px solid #d32f2f;
+            padding: 14px 18px;
+            margin: 20px 0;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+        .danger-box strong { color: #d32f2f; }
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            margin: 22px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .bridge-text {
+            background-color: #f0f7ff;
+            border: 1px solid #cce0ff;
+            border-left: 5px solid #2c3e50;
+            padding: 16px 18px;
+            margin: 24px 0;
+            font-size: 1em;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        /* QUIZ */
+        .quiz-section { margin-top: 10px; }
+        .quiz-step { display: none; }
+        .quiz-step.active { display: block; }
+        .quiz-question {
+            font-size: 1.15em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 18px;
+            line-height: 1.4;
+        }
+        .quiz-progress {
+            text-align: center;
+            font-size: 0.85em;
+            color: #888;
+            margin-bottom: 16px;
+        }
+        .quiz-option {
+            display: block;
+            width: 100%;
+            padding: 16px 18px;
+            margin-bottom: 12px;
+            background: #f9f9f9;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            color: #333;
+            cursor: pointer;
+            text-align: left;
+            transition: all 0.2s;
+            line-height: 1.4;
+        }
+        .quiz-option:hover {
+            border-color: #d32f2f;
+            background: #fff5f5;
+            color: #d32f2f;
+        }
+
+        /* RESULTADO */
+        .result-section {
+            display: none;
+            text-align: center;
+        }
+        .result-box {
+            background: #fffbea;
+            border: 2px solid #FFD700;
+            border-radius: 10px;
+            padding: 24px 20px;
+            margin: 20px 0;
+        }
+        .result-icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .result-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+        .result-text {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            text-align: left;
+        }
+        .urgency-box {
+            background-color: #fff5f5;
+            border: 1px solid #ffcccc;
+            border-left: 5px solid #d32f2f;
+            padding: 14px 18px;
+            margin: 16px 0;
+            font-size: 0.95em;
+            line-height: 1.6;
+            text-align: left;
+        }
+        .urgency-box strong { color: #d32f2f; }
+        .cta-button {
+            display: block;
+            width: 100%;
+            max-width: 480px;
+            margin: 20px auto 0;
+            padding: 20px 20px;
+            background: linear-gradient(to bottom, #FFD700, #FFA500);
+            color: #000;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 900;
+            border-radius: 8px;
+            text-align: center;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            border: 2px solid #e69500;
+            animation: pulse 2s infinite;
+            line-height: 1.3;
+        }
+        .cta-button:hover { background: linear-gradient(to bottom, #FFA500, #FF8C00); }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+        .cta-sub {
+            font-size: 0.8em;
+            color: #888;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .footer {
+            background-color: #222;
+            color: #aaa;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.75em;
+            margin-top: 40px;
+        }
+        .footer-content { max-width: 680px; margin: 0 auto; }
+        .disclaimer-box {
+            border: 1px solid #444;
+            padding: 12px;
+            margin-bottom: 16px;
+            text-align: justify;
+            line-height: 1.4;
+            background-color: #1a1a1a;
+        }
+        .footer a { color: #ddd; text-decoration: none; margin: 0 8px; }
+        .company-info { margin-top: 16px; font-weight: bold; color: #ccc; }
+
+        @media (max-width: 600px) {
+            .container { margin: 0; padding: 18px 16px 28px; border-radius: 0; }
+            h1 { font-size: 1.45em; }
+            .cta-button { font-size: 1.05em; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="advertorial-bar">ADVERTORIAL | TREŚĆ SPONSOROWANA</div>
+
+<div class="container">
+
+    <h1>Lekarz Stracił Licencję za Ujawnienie Prawdy o Cukrzycy — Sprawdź, Czy Ten Starożytny „Święty Olej" Jest Dla Ciebie</h1>
+
+    <div class="deck">
+        Tysiące Polaków powyżej 60. roku życia odkryło już tę metodę. Zanim pokażemy Ci film, potrzebujemy wiedzieć więcej o Twojej sytuacji — bo efekty zależą od Twojego profilu.
+    </div>
+
+    <div class="author-box">
+        <strong>Opublikowano:</strong> Dziś &nbsp;|&nbsp; <strong>Redakcja Zdrowie Dziś</strong> &nbsp;|&nbsp; Czas: 2 minuty
+    </div>
+
+    <p>Najpierw tylko trochę wyższy cukier. Potem metformina. Potem lista rzeczy, których nie możesz jeść. Potem rodzina zaczyna decydować za Ciebie. I pewnego dnia — zamiast żyć — tylko zarządzasz chorobą.</p>
+
+    <p>Miliony Polaków powyżej 60. roku życia żyją w tym cichym strachu. Nie boją się śmierci — boją się utraty niezależności. Bycia ciężarem dla rodziny. Insuliny do końca życia. <strong>Ale to nie jest nieuniknione.</strong></p>
+
+    <div class="danger-box">
+        <strong>⚠ Czego żaden lekarz Ci nie powie:</strong> Cukrzyca typu 2 ma znacznie mniej wspólnego z genetyką czy wiekiem, niż nam mówiono. Istnieje naturalny mechanizm — wzmiankowany nawet w Biblii — który atakuje problem u korzenia.
+    </div>
+
+    <a href="https://lp.coisasdefit.shop/preclick">
+        <img src="./img/herodb.webp" alt="Święty Olej — naturalne odkrycie" class="hero-image">
+    </a>
+
+    <div class="bridge-text">
+        Pewien lekarz stracił licencję za ujawnienie pacjentom tego sekretu. Nagrał bezpłatny film, który wyjaśnia wszystko. Ale zanim Ci go pokażemy — odpowiedz na 3 krótkie pytania, żebyśmy mogli potwierdzić, że ta metoda jest odpowiednia dla Twojego profilu.
+    </div>
+
+    <!-- QUIZ -->
+    <div class="quiz-section">
+
+        <!-- Pergunta 1 -->
+        <div class="quiz-step active" id="step1">
+            <div class="quiz-progress">Pytanie 1 z 3</div>
+            <div class="quiz-question">Od jak dawna żyjesz z cukrzycą lub podwyższonym poziomem cukru?</div>
+            <button class="quiz-option" onclick="nextStep(2)">Mniej niż 1 rok</button>
+            <button class="quiz-option" onclick="nextStep(2)">Od 1 do 5 lat</button>
+            <button class="quiz-option" onclick="nextStep(2)">Ponad 5 lat</button>
+        </div>
+
+        <!-- Pergunta 2 -->
+        <div class="quiz-step" id="step2">
+            <div class="quiz-progress">Pytanie 2 z 3</div>
+            <div class="quiz-question">Czy próbowałeś już metforminy, insuliny lub innych leków?</div>
+            <button class="quiz-option" onclick="nextStep(3)">Tak, ale wyniki mnie rozczarowały</button>
+            <button class="quiz-option" onclick="nextStep(3)">Tak, ale skutki uboczne są trudne do zniesienia</button>
+            <button class="quiz-option" onclick="nextStep(3)">Szukam naturalnych alternatyw</button>
+        </div>
+
+        <!-- Pergunta 3 -->
+        <div class="quiz-step" id="step3">
+            <div class="quiz-progress">Pytanie 3 z 3</div>
+            <div class="quiz-question">Czego najbardziej się obawiasz w związku z cukrzycą?</div>
+            <button class="quiz-option" onclick="showResult()">Amputacji lub poważnych powikłań</button>
+            <button class="quiz-option" onclick="showResult()">Uzależnienia od insuliny do końca życia</button>
+            <button class="quiz-option" onclick="showResult()">Utraty niezależności i bycia ciężarem dla rodziny</button>
+        </div>
+
+    </div>
+
+    <!-- RESULTADO -->
+    <div class="result-section" id="result">
+        <div class="result-box">
+            <div class="result-icon">✅</div>
+            <div class="result-title">Twój profil pasuje do osób, które najlepiej reagują na metodę „Świętego Oleju"</div>
+            <div class="result-text">
+                Na podstawie Twoich odpowiedzi widzimy, że Twoja sytuacja odpowiada dokładnie tym pacjentom, u których ta metoda przyniosła największe efekty. Naturalny olej wzmiankowany w 30. rozdziale Księgi Wyjścia w Biblii działa bezpośrednio na komórki — reaktywując ich zdolność do prawidłowego przetwarzania cukru.
+            </div>
+            <div class="result-text">
+                Lekarz, który stracił licencję za ujawnienie tej prawdy, nagrał bezpłatny film, w którym wyjaśnia wszystko szczegółowo: skąd pochodzi ten olej, jak dokładnie działa i jak prawidłowo go stosować. <strong>Ten film jest wszystkim, czego potrzebujesz.</strong>
+            </div>
+        </div>
+
+        <div class="urgency-box">
+            <strong>⚠ Uwaga:</strong> Ten film zawiera informacje, których przemysł farmaceutyczny wolałby nie upubliczniać. Nie ma gwarancji, że długo pozostanie dostępny. Obejrzyj go teraz.
+        </div>
+
+        <a href="https://lp.coisasdefit.shop/preclick" class="cta-button">
+            ▶ OBEJRZYJ BEZPŁATNY FILM TERAZ
+        </a>
+        <p class="cta-sub">Bezpłatny dostęp · Dostępny przez ograniczony czas</p>
+    </div>
+
+</div>
+
+<div class="footer">
+    <div class="footer-content">
+        <div class="disclaimer-box">
+            <strong>WAŻNE ZASTRZEŻENIE:</strong> Treść tej strony służy wyłącznie celom informacyjnym i nie zastępuje profesjonalnej porady medycznej. Indywidualne wyniki mogą się różnić. <strong>Historia i postacie przedstawione w tym artykule mają charakter ilustracyjny.</strong> Zawsze konsultuj się z lekarzem przed rozpoczęciem jakiegokolwiek nowego programu zdrowotnego.
+        </div>
+        <p>
+            <a href="./privacy.html">Polityka Prywatności</a> |
+            <a href="./terms.html">Warunki Użytkowania</a> |
+            <a href="mailto:contato@lmsuplementos.com.br">Kontakt</a>
+        </p>
+        <div class="company-info">
+            L.M. SUPLEMENTOS LTDA - ME | CNPJ: 65.108.072/0001-00<br>
+            Rua Augusta, 1500 - Consolacao, São Paulo - SP, Brazylia
+        </div>
+        <p style="margin-top: 16px;">&copy; 2025 Zdrowie Dziś. Wszelkie prawa zastrzeżone.</p>
+    </div>
+</div>
+
+<script>
+function nextStep(step) {
+    document.querySelectorAll('.quiz-step').forEach(function(el) {
+        el.classList.remove('active');
+    });
+    document.getElementById('step' + step).classList.add('active');
+    window.scrollTo({top: document.querySelector('.quiz-section').offsetTop - 20, behavior: 'smooth'});
+}
+
+function showResult() {
+    document.querySelector('.quiz-section').style.display = 'none';
+    document.getElementById('result').style.display = 'block';
+    window.scrollTo({top: document.getElementById('result').offsetTop - 20, behavior: 'smooth'});
+}
+</script>
+
+<script type="text/javascript" src="https://lp.coisasdefit.shop/pretrack.js?rtkcmpid=PLACEHOLDER_CAMPAIGN_ID"></script>
+</body>
+</html>
 
