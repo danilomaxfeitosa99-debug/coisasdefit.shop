@@ -1,308 +1,267 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l=':'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
-    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zdrowie Dziś | Ukryta Prawda o Cukrze we Krwi, Której Lekarze Nie Chcą Ci Powiedzieć</title>
+    <title>Zdrowie Dziś | Lekarz Który Stracił Licencję za Ujawnienie Prawdy o Cukrzycy</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
-            font-family: Georgia, 'Times New Roman', serif;
-            background-color: #f0ece4;
-            color: #222;
-            font-size: 17px;
-            line-height: 1.8;
-        }
-
-        .topbar {
-            background-color: #1a1a1a;
-            color: #ccc;
-            text-align: center;
-            padding: 8px 16px;
-            font-size: 12px;
-            letter-spacing: 0.5px;
-            font-family: Arial, sans-serif;
-        }
-        .topbar span { color: #FFD700; font-weight: bold; }
-
-        .site-header {
-            background: #fff;
-            border-bottom: 3px solid #c8102e;
-            padding: 14px 0;
-            text-align: center;
-        }
-        .site-header .brand {
-            font-family: Georgia, serif;
-            font-size: 24px;
-            font-weight: bold;
-            color: #1a1a1a;
-            letter-spacing: 1px;
-        }
-        .site-header .tagline {
-            font-size: 11px;
-            color: #888;
-            font-family: Arial, sans-serif;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-top: 3px;
-        }
-
-        .category-label {
-            max-width: 760px;
-            margin: 20px auto 0;
-            padding: 0 20px;
-            font-family: Arial, sans-serif;
-            font-size: 11px;
-            font-weight: bold;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: #c8102e;
-        }
-
-        .container {
-            max-width: 760px;
-            margin: 10px auto 40px;
-            background: #fff;
-            padding: 34px 40px 40px;
-            border: 1px solid #ddd;
-        }
-
-        h1 {
-            font-family: Georgia, serif;
-            font-size: 30px;
-            line-height: 1.3;
-            color: #1a1a1a;
-            margin-bottom: 12px;
-            font-weight: bold;
-        }
-        .deck {
-            font-size: 18px;
-            color: #444;
-            border-left: 4px solid #c8102e;
-            padding-left: 14px;
-            margin: 14px 0 18px;
-            font-style: italic;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
             line-height: 1.6;
         }
-        .byline {
-            font-family: Arial, sans-serif;
-            font-size: 12px;
-            color: #888;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 14px;
-            margin-bottom: 24px;
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
-        .byline strong { color: #555; }
-
-        p { margin-bottom: 20px; }
-
+        .advertorial-bar {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h1 {
+            color: #d32f2f;
+            font-size: 2.2em;
+            text-align: center;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+        .deck {
+            font-size: 1.05em;
+            color: #444;
+            border-left: 4px solid #d32f2f;
+            padding-left: 14px;
+            margin: 12px 0 20px;
+            font-style: italic;
+            line-height: 1.55;
+        }
         h2 {
-            font-family: Georgia, serif;
-            font-size: 22px;
-            color: #1a1a1a;
-            margin: 32px 0 14px;
-            line-height: 1.35;
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-top: 30px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
         }
-
+        p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .image-link {
+            display: block;
+            text-align: center;
+            margin: 25px 0;
+            transition: transform 0.2s ease;
+        }
+        .image-link:hover { transform: scale(1.02); }
+        .hero-image {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            cursor: pointer;
+        }
+        .cta-button {
+            display: block;
+            width: 90%;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 18px 20px;
+            background: linear-gradient(to bottom, #FFD700, #FFA500);
+            color: #000;
+            text-decoration: none;
+            font-size: 1.4em;
+            font-weight: 900;
+            border-radius: 8px;
+            text-align: center;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            border: 2px solid #e69500;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+        .cta-button:hover {
+            background: linear-gradient(to bottom, #FFA500, #FF8C00);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+        .author-box {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #2c3e50;
+            margin-bottom: 20px;
+        }
+        .author-info { font-size: 0.9em; color: #555; }
+        .danger-box {
+            background-color: #fff5f5;
+            border: 1px solid #ffcccc;
+            border-left: 5px solid #d32f2f;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .danger-box strong { color: #d32f2f; }
+        .highlight-box {
+            background-color: #fffbea;
+            border: 1px solid #e8c900;
+            border-left: 5px solid #FFD700;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        .highlight-box strong { color: #7a5c00; }
         .pull-quote {
             border-top: 2px solid #1a1a1a;
             border-bottom: 2px solid #1a1a1a;
-            margin: 32px 0;
-            padding: 18px 24px;
-            font-size: 20px;
+            margin: 28px 0;
+            padding: 16px 20px;
+            font-size: 1.2em;
             font-style: italic;
             color: #1a1a1a;
-            line-height: 1.5;
+            line-height: 1.45;
             text-align: center;
         }
-
-        .article-img {
-            width: 100%;
-            height: auto;
-            display: block;
-            margin: 26px 0 8px;
-            border: 1px solid #ddd;
-        }
-        .img-caption {
-            font-family: Arial, sans-serif;
-            font-size: 12px;
-            color: #999;
-            text-align: center;
-            margin-bottom: 24px;
-            font-style: italic;
-        }
-
-        .highlight-box {
-            background: #fffbea;
-            border: 1px solid #e8c900;
-            border-left: 5px solid #FFD700;
-            padding: 18px 22px;
-            margin: 30px 0;
-            font-size: 16px;
-            line-height: 1.65;
-        }
-        .highlight-box strong { color: #7a5c00; }
-
-        .cta-wrap {
-            text-align: center;
-            margin: 36px 0 12px;
-        }
-        .cta-button {
-            display: inline-block;
-            padding: 18px 36px;
-            background: #FFD700;
-            color: #1a1a1a;
-            font-family: Arial, sans-serif;
-            font-size: 17px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 4px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-            transition: background 0.2s;
-            line-height: 1.4;
-        }
-        .cta-button:hover { background: #e6c200; }
-        .cta-sub {
-            font-family: Arial, sans-serif;
-            font-size: 12px;
-            color: #999;
-            margin-top: 10px;
-        }
-
         .footer {
-            max-width: 760px;
-            margin: 0 auto;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-            font-size: 11px;
+            background-color: #222;
             color: #aaa;
             text-align: center;
-            line-height: 1.7;
+            padding: 40px 20px;
+            font-size: 0.85em;
+            margin-top: 40px;
         }
-        .footer a { color: #aaa; }
-
+        .footer-content { max-width: 800px; margin: 0 auto; }
+        .disclaimer-box {
+            border: 1px solid #444;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 0.8em;
+            line-height: 1.4;
+            background-color: #1a1a1a;
+        }
+        .footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
+        .footer a:hover { text-decoration: underline; color: #fff; }
+        .company-info { margin-top: 20px; font-weight: bold; color: #ccc; }
         @media (max-width: 600px) {
-            .container { padding: 22px 18px 30px; }
-            h1 { font-size: 23px; }
-            .pull-quote { font-size: 17px; }
+            .container { margin: 0; padding: 15px; border-radius: 0; }
+            h1 { font-size: 1.8em; }
+            .cta-button { font-size: 1.1em; width: 100%; padding: 15px 10px; }
         }
     </style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>
-    history.pushState(null, null, location.href);
-    window.onpopstate = function() {
-        window.location.replace("https://lp.coisasdefit.shop/preclick");
-    };
-    </script>
-
-<div class="topbar">
-    ADVERTORIAL &nbsp;|&nbsp; <span>Treść Sponsorowana</span>
-</div>
-
-<div class="site-header">
-    <div class="brand">Zdrowie Dziś</div>
-    <div class="tagline">Niezależne informacje o zdrowiu</div>
-</div>
-
-<div class="category-label">METABOLIZM &amp; POZIOM CUKRU WE KRWI</div>
-
-<div class="container">
-
-    <h1>Ukryta Prawda o Poziomie Cukru we Krwi, Której Lekarze Nie Chcą Ci Powiedzieć</h1>
-
-    <div class="deck">
-        Przez lata mówiono Ci, że musisz zaakceptować swój stan. Ale co jeśli istnieje naturalne rozwiązanie, które nowoczesna medycyna ignorowała przez dziesięciolecia — i które polscy naukowcy właśnie ponownie odkryli?
+    <div class="advertorial-bar">
+        ADVERTORIAL | TREŚĆ SPONSOROWANA
     </div>
 
-    <div class="byline">
-        Od <strong>Redakcji Zdrowie Dziś</strong> &nbsp;|&nbsp; Zaktualizowano: Czerwiec 2025 &nbsp;|&nbsp; Czas czytania: 4 minuty
-    </div>
+    <div class="container">
 
-    <a href="https://lp.coisasdefit.shop/preclick" target="_blank">
-        <img src="img/db2.webp" alt="Naturalny mechanizm stabilizacji cukru" class="article-img">
-    </a>
-    <p class="img-caption">Starożytny naturalny mechanizm — i dlaczego Twój lekarz milczy na jego temat.</p>
+        <h1>Lekarz Stracił Licencję za Ujawnienie „Świętego Oleju" Pacjentom z Cukrzycą — i Dlaczego Przemysł Farmaceutyczny Chciał to Zatuszować</h1>
 
-    <p>
-        Jeśli masz ponad 60 lat i żyjesz z cukrzycą lub wysokim poziomem cukru, prawdopodobnie znasz to uczucie: zmęczenie po jedzeniu, poranna mgła w głowie, niekończąca się lista rzeczy, których musisz unikać. Przez lata mówiono Ci, że musisz kontrolować swój stan — nie rozwiązywać go.
-    </p>
+        <div class="deck">
+            Ta historia obiega całą Polskę. Naturalny olej wzmiankowany w Biblii od tysięcy lat może zmieniać metabolizm cukru — i pewien odważny lekarz zapłacił za to najwyższą cenę zawodową. Wszystko jest wyjaśnione w bezpłatnym filmie, który może wkrótce zniknąć z internetu.
+        </div>
 
-    <p>
-        Ale istnieje <strong>starożytny, naturalny mechanizm</strong>, który może pomóc Twojemu organizmowi odzyskać utraconą równowagę. Tajemnica, którą nowoczesna medycyna ignorowała przez dziesięciolecia, jest teraz w końcu dostępna — jeśli wiesz, gdzie szukać.
-    </p>
+        <div class="author-box">
+            <div class="author-info">
+                <strong>Opublikowano:</strong> Dziś | <strong>Autor:</strong> Redakcja Zdrowie Dziś | <strong>Czas czytania:</strong> 3 minuty
+            </div>
+        </div>
 
-    <h2>Dlaczego nikt Ci o tym nie powiedział?</h2>
-
-    <p>
-        Odpowiedź jest prosta: tego naturalnego rozwiązania nie można opatentować. Nie generuje zysków dla firm farmaceutycznych. Dlatego nie ma żadnej motywacji, by finansować jego badania ani informować o nim pacjentów. System był skonstruowany tak, żeby utrzymać Cię w zależności od leków — metforminy niszczącej żołądek, Ozempicu kosztującego tysiąc euro miesięcznie, zastrzyków z insuliny uzależniających na całe życie — nie po to, żeby pomóc Ci rozwiązać problem u jego korzenia.
-    </p>
-
-    <div class="pull-quote">
-        „Wyobraź sobie, że każdego ranka budzisz się pełen energii, bez mgły w głowie — i możesz swobodnie cieszyć się ulubionymi potrawami bez poczucia winy."
-    </div>
-
-    <p>
-        To nie jest nieosiągalny sen. To konkretna możliwość dla tysięcy ludzi, którzy już odkryli tę metodę. I teraz jest dostępna również dla Ciebie.
-    </p>
-
-    <a href="https://lp.coisasdefit.shop/preclick" target="_blank">
-        <img src="img/herodb.webp" alt="Święty Olej — naturalne odkrycie" class="article-img">
-    </a>
-    <p class="img-caption">„Święty Olej" — naturalna esencja przekazywana przez pokolenia, której działanie nauka dopiero zaczyna rozumieć.</p>
-
-    <h2>„Święty Olej", który może zmienić Twój metabolizm</h2>
-
-    <p>
-        W centrum tego odkrycia stoi naturalny element — prawdziwy <strong>„Święty Olej"</strong> — którego istnienie było przekazywane z pokolenia na pokolenie. Nie jest to lek, nie ma skutków ubocznych i nie wymaga wyczerpujących diet. Ta esencja, jeśli jest stosowana prawidłowo, działa bezpośrednio na komórki, reaktywując ich zdolność do efektywnego przetwarzania cukru.
-    </p>
-
-    <p>
-        Niezależne badania wykazały, że ten olej może pomóc ustabilizować poziom cukru we krwi i poprawić ogólny stan zdrowia. To tak, jakby Twój organizm dostał impuls, by znów funkcjonował tak, jak powinien — bez leków, bez zastrzyków, bez wyrzeczeń.
-    </p>
-
-    <p>
-        Co więcej — ten olej nie jest wynalazkiem nowoczesnej medycyny. Jest wzmiankowany w <strong>30. rozdziale Księgi Wyjścia w Biblii</strong>. Był dostępny przez tysiąclecia. Czego nikt Ci nie powiedział, to jak używać go dokładnie w przypadku cukrzycy typu 2 — i właśnie to ujawnia lekarz w tym filmie.
-    </p>
-
-    <div class="highlight-box">
-        <strong>⚠ Dlaczego to wideo może wkrótce zniknąć z sieci:</strong><br>
-        Treści ujawniające alternatywy dla rozwiązań farmaceutycznych są regularnie usuwane. Jeśli tu trafiłeś, to właśnie ten moment, żeby poznać prawdę — dopóki wideo jest jeszcze dostępne.
-    </div>
-
-    <h2>Nie pozwól, żeby mówili Ci, że nie ma nadziei</h2>
-
-    <p>
-        Jeśli masz już dość pustych obietnic i tymczasowych rozwiązań, jeśli chcesz w końcu rozwiązać korzeń problemu, a nie tylko objawy — musisz zobaczyć ten film. Ujawni wszystkie szczegóły dotyczące tego, jak ten „Święty Olej" może transformować Twoje zdrowie i przywrócić Ci wolność, o której myślałeś, że straciłeś ją na zawsze.
-    </p>
-
-    <div class="cta-wrap">
-        <a href="https://lp.coisasdefit.shop/preclick" target="_blank" class="cta-button">
-            ▶ OBEJRZYJ FILM TERAZ<br>
-            <span style="font-size: 14px; font-weight: normal;">Odkryj sekret stabilnego cukru i więcej energii</span>
+        <a href="https://lp.coisasdefit.shop/preclick" class="image-link">
+            <img src="./img/db2.webp" alt="Naturalny mechanizm stabilizacji cukru" class="hero-image">
         </a>
-        <p class="cta-sub">Bezpłatny dostęp · Dostępny przez ograniczony czas</p>
+
+        <p>Najpierw tylko trochę wyższy cukier na rutynowym badaniu. Potem lekarz zwiększa dawkę metforminy. Potem lista zakazanych potraw rośnie. Potem rodzina zaczyna decydować za Ciebie, co możesz jeść na Wigilię. A potem — pewnego dnia — nie ty już kontrolujesz swoje życie. Cukrzyca to robi za Ciebie.</p>
+
+        <p>Miliony Polaków powyżej 60. roku życia żyją w tym cichym strachu. Nie strachu przed śmiercią — ale przed utratą niezależności. Przed dniem, w którym ktoś inny będzie musiał towarzyszyć Ci wszędzie. Przed amputacją, przed insuliną do końca życia, przed tym, że stajesz się ciężarem dla rodziny. I przez lata wmawiano Ci, że to nieuniknione. <strong>Ale to nieprawda.</strong></p>
+
+        <div class="danger-box">
+            <strong>⚠ Czego żaden lekarz Ci nie powie:</strong> Cukrzyca typu 2 nie jest wyrokiem. Jest wynikiem konkretnego procesu wewnętrznego — który można zatrzymać, jeśli wiesz, co robić i kiedy.
+        </div>
+
+        <h2>Odkrycie, Które Zmienia Wszystko</h2>
+
+        <p>Pewien lekarz rodzinny z ponad 30-letnim doświadczeniem zaczął zauważać coś dziwnego u swoich pacjentów: ci, którzy stosowali ten naturalny olej — z tradycji rodzinnej, przypadkowo lub za radą starszego zielarza — uzyskiwali wyniki metabolizmu glukozy, których konwencjonalna medycyna nie potrafiła wyjaśnić.</p>
+
+        <p>Zamiast ignorować dowody, zaczął je dokumentować. Stopniowo zaczął polecać go innym pacjentom. Wyniki pojawiały się dalej. Wieść się rozeszła. I nieuchronnie dotarła do uszu Izby Lekarskiej.</p>
+
+        <div class="pull-quote">
+            "Nic nie sprzedawałem. Mówiłem tylko prawdę ludziom, którzy na nią zasługiwali."
+        </div>
+
+        <p>Postępowanie dyscyplinarne było szybkie. Licencja — odebrana. Oficjalne uzasadnienie: zalecanie leczenia bez naukowego potwierdzenia. Ale był jeden szczegół, który nie pasował wielu jego kolegom: żaden z jego pacjentów nie doznał żadnej krzywdy. Wręcz przeciwnie.</p>
+
+        <a href="https://lp.coisasdefit.shop/preclick" class="image-link">
+            <img src="./img/herodb.webp" alt="Święty Olej — naturalne odkrycie" class="hero-image">
+        </a>
+
+        <h2>Czym Jest Ten „Święty Olej"?</h2>
+
+        <p>Nie jest lekiem. Nie wymaga recepty. Nie wymaga radykalnej zmiany diety ani stylu życia. Jest naturalnym elementem, zakorzenionym w tysiącletnich tradycjach — który niezależne badania dopiero zaczęły poważnie analizować.</p>
+
+        <p>Według relacji osób, które go stosowały, i udokumentowanych przypadków tego lekarza, mechanizm działania jest bezpośredni: działa na komórki, reaktywując ich zdolność do prawidłowego reagowania na glukozę. Nie maskuje problemu — atakuje go u korzenia.</p>
+
+        <p>Co więcej — ten olej nie jest wynalazkiem nowoczesnej medycyny. Jest wzmiankowany w <strong>30. rozdziale Księgi Wyjścia w Biblii</strong> i był dostępny przez tysiąclecia. Czego nikt Ci nie powiedział, to jak używać go dokładnie w przypadku cukrzycy typu 2 — i właśnie to ujawnia lekarz w tym filmie.</p>
+
+        <div class="highlight-box">
+            <strong>Dlaczego nikt o tym nie mówi?</strong> Naturalnego oleju nie można opatentować. Nie generuje miliardów dla firm farmaceutycznych. Nie wymaga kosztownych wizyt lekarskich ani coraz silniejszych leków. I właśnie dlatego przemysł woli, żebyś nigdy się o tym nie dowiedział.
+        </div>
+
+        <p>Ten lekarz zdecydował się upublicznić to odkrycie w <strong>bezpłatnym filmie</strong>, który wyjaśnia wszystko szczegółowo: skąd pochodzi ten olej, jak dokładnie działa na komórki i — przede wszystkim — jak prawidłowo go stosować, aby uzyskać udokumentowane wyniki.</p>
+
+        <p><strong>Ten film jest wszystkim, czego potrzebujesz.</strong> Żadnych wizyt, żadnych recept, żadnych kosztownych procedur. Tylko kompletne informacje — wyjaśnione w sposób jasny i przystępny — abyś mógł działać już dziś, zanim szkody staną się nieodwracalne.</p>
+
+        <div class="danger-box">
+            <strong>⚠ Uwaga:</strong> Film zawiera informacje, które część przemysłu farmaceutycznego wolałaby nie upubliczniać. Nie ma gwarancji, że długo pozostanie dostępny w internecie. Jeśli tu jesteś, obejrzyj go teraz — nie odkładaj na jutro czegoś, co dotyczy Twojego zdrowia i niezależności.
+        </div>
+
+        <a href="https://lp.coisasdefit.shop/preclick" class="cta-button">▶ OBEJRZYJ FILM TERAZ</a>
+
     </div>
 
-</div>
+    <div class="footer">
+        <div class="footer-content">
+            <div class="disclaimer-box">
+                <strong>WAŻNE ZASTRZEŻENIE:</strong> Ta strona internetowa nie jest częścią serwisu Facebook ani Facebook Inc. Strona ta nie jest w żaden sposób zatwierdzona przez Facebook. FACEBOOK jest znakiem towarowym Facebook, Inc. Treść tej strony służy wyłącznie celom informacyjnym i edukacyjnym. Informacje tu zawarte nie stanowią porady medycznej i nie zastępują konsultacji z wykwalifikowanym specjalistą ds. zdrowia. Wyniki mogą się różnić i nie są gwarantowane. <strong>Historia i postacie przedstawione w tym artykule mają charakter ilustracyjny.</strong> Zawsze konsultuj się z lekarzem przed rozpoczęciem jakiegokolwiek nowego programu zdrowotnego.
+            </div>
 
-<div class="footer">
-    <p>&copy; 2025 Zdrowie Dziś. Wszelkie prawa zastrzeżone.</p>
-    <p>L.M. SUPLEMENTOS LTDA - ME | CNPJ: 65.108.072/0001-00</p>
-    <p>Rua Augusta, 1500 - Consolacao, São Paulo - SP, Brazylia</p>
-    <p><a href="privacy.html">Polityka Prywatności</a> &nbsp;|&nbsp; <a href="terms.html">Warunki Użytkowania</a></p>
-    <p style="margin-top: 8px;">Zastrzeżenie prawne: Informacje na tej stronie służą wyłącznie celom informacyjnym i nie zastępują profesjonalnej porady medycznej. Indywidualne wyniki mogą się różnić. Produkt nie jest przeznaczony do diagnozowania, leczenia, wyleczenia ani zapobiegania jakimkolwiek chorobom.</p>
-</div>
+            <p>
+                <a href="./privacy.html">Polityka Prywatności</a> |
+                <a href="./terms.html">Warunki Użytkowania</a> |
+                <a href="mailto:contato@lmsuplementos.com.br">Kontakt</a>
+            </p>
 
-<script type="text/javascript" src="https://lp.coisasdefit.shop/pretrack.js?rtkcmpid=6a50d31c69658e20d338416c"></script>
+            <div class="company-info">
+                L.M. SUPLEMENTOS LTDA - ME | CNPJ: 65.108.072/0001-00<br>
+                Rua Augusta, 1500 - Consolacao, São Paulo - SP, Brazylia
+            </div>
+
+            <p style="margin-top: 20px;">&copy; 2025 Zdrowie Dziś. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://lp.coisasdefit.shop/pretrack.js?rtkcmpid=PLACEHOLDER_CAMPAIGN_ID"></script>
 </body>
 </html>
