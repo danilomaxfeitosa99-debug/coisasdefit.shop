@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Különleges Felfedezés: A Duna-menti Erdők Titka a Vércukorszint Szabályozására</title>
+    <title>Miért Nem Csökken a Vércukorszintje, Bármit is Próbál? A Válasz Meglepő Lehet.</title>
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -14,102 +14,111 @@
             line-height: 1.8;
         }
         .container {
-            max-width: 800px;
-            margin: 40px auto;
+            max-width: 780px;
+            margin: 30px auto;
             background-color: #fff;
-            padding: 50px;
-            border-radius: 15px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-            border-top: 10px solid #27ae60;
+            padding: 45px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
         }
         .advertorial-label {
             text-align: center;
-            font-size: 0.85em;
-            color: #7f8c8d;
+            font-size: 0.82em;
+            color: #95a5a6;
             text-transform: uppercase;
             letter-spacing: 2px;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             border-bottom: 1px solid #ecf0f1;
             padding-bottom: 10px;
         }
         h1 {
-            color: #1e8449;
-            font-size: 2.4em;
+            color: #1a1a1a;
+            font-size: 2.2em;
             text-align: center;
             margin-bottom: 25px;
             line-height: 1.3;
         }
         h2 {
-            color: #27ae60;
-            font-size: 1.8em;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            border-left: 5px solid #27ae60;
-            padding-left: 15px;
+            color: #1e8449;
+            font-size: 1.6em;
+            margin-top: 35px;
+            margin-bottom: 15px;
         }
         p {
             font-size: 1.15em;
-            margin-bottom: 25px;
+            margin-bottom: 22px;
             text-align: justify;
         }
         .highlight {
-            background-color: #fcf3cf;
-            padding: 2px 5px;
+            background-color: #ffeaa7;
+            padding: 2px 6px;
             font-weight: bold;
-            color: #d35400;
+        }
+        .bold-green {
+            color: #1e8449;
+            font-weight: bold;
         }
         .image-link {
             display: block;
             text-align: center;
-            margin: 40px 0;
-            transition: transform 0.3s ease;
+            margin: 35px 0;
+            transition: all 0.3s ease;
         }
         .image-link:hover {
             transform: scale(1.02);
+            opacity: 0.95;
         }
         .hero-image {
             width: 100%;
-            max-width: 750px;
+            max-width: 720px;
             height: auto;
             border-radius: 10px;
             border: 3px dashed #27ae60;
-            box-shadow: 0 10px 25px rgba(39, 174, 96, 0.2);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
             cursor: pointer;
         }
         .cta-button {
             display: block;
             width: 85%;
-            max-width: 500px;
-            margin: 40px auto;
+            max-width: 520px;
+            margin: 35px auto;
             padding: 20px 25px;
-            background-color: #e67e22;
+            background-color: #27ae60;
             color: #fff;
             text-decoration: none;
-            font-size: 1.3em;
+            font-size: 1.25em;
             font-weight: bold;
             border-radius: 50px;
             text-align: center;
-            box-shadow: 0 8px 20px rgba(230, 126, 34, 0.4);
+            box-shadow: 0 8px 20px rgba(39, 174, 96, 0.35);
             transition: all 0.3s ease;
             animation: pulse 2s infinite;
         }
         .cta-button:hover {
-            background-color: #d35400;
+            background-color: #1e8449;
             transform: translateY(-3px);
-            box-shadow: 0 12px 25px rgba(211, 84, 0, 0.5);
+            box-shadow: 0 12px 25px rgba(30, 132, 73, 0.5);
         }
         @keyframes pulse {
             0% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+            50% { transform: scale(1.04); }
             100% { transform: scale(1); }
+        }
+        .quote-box {
+            background-color: #eafaf1;
+            border-left: 5px solid #27ae60;
+            padding: 20px 25px;
+            margin: 30px 0;
+            font-style: italic;
+            font-size: 1.1em;
         }
         .footer {
             background-color: #1a252f;
             color: #bdc3c7;
             text-align: center;
-            padding: 60px 25px;
-            font-size: 0.9em;
-            margin-top: 60px;
+            padding: 50px 25px;
+            font-size: 0.85em;
+            margin-top: 50px;
         }
         .footer-content {
             max-width: 850px;
@@ -117,10 +126,10 @@
         }
         .disclaimer {
             border: 1px solid #2c3e50;
-            padding: 25px;
-            margin-bottom: 30px;
+            padding: 20px;
+            margin-bottom: 25px;
             text-align: justify;
-            font-size: 0.95em;
+            font-size: 0.9em;
             line-height: 1.5;
             background-color: #2c3e50;
             border-radius: 8px;
@@ -135,22 +144,21 @@
             text-decoration: underline;
         }
         .company-details {
-            margin-top: 30px;
+            margin-top: 25px;
             font-weight: bold;
             color: #ecf0f1;
-            letter-spacing: 0.5px;
         }
         
         @media (max-width: 600px) {
             .container {
-                margin: 15px;
-                padding: 25px;
+                margin: 10px;
+                padding: 20px;
             }
             h1 {
-                font-size: 1.8em;
+                font-size: 1.7em;
             }
             h2 {
-                font-size: 1.4em;
+                font-size: 1.3em;
             }
             p {
                 font-size: 1.05em;
@@ -164,43 +172,63 @@
 </head>
 <body>
     <div class="container">
-        <div class="advertorial-label">Egészségügyi Riport</div>
+        <div class="advertorial-label">Szponzorált egészségügyi tartalom</div>
         
-        <h1>Különleges Felfedezés: A Duna-menti Erdők Titka a Vércukorszint Szabályozására</h1>
+        <h1>Miért Nem Csökken a Vércukorszintje, Bármit is Próbál? A Válasz Meglepő Lehet.</h1>
         
-        <p>Évszázadokon át a magyar népi gyógyászat őrzött egy titkot, amely a Duna menti ősi erdők mélyén rejtőzött. Egy ritka, aranyszínű gyógynövény, amelyről a helyi öregek azt suttogták, hogy képes "megtisztítani a vért" és helyreállítani a test természetes egyensúlyát.</p>
+        <p>Diétázik. Mozog. Odafigyel, mit eszik. Mégis, minden reggel ugyanaz a frusztráció: a vércukorszintje nem akar csökkenni. Ismerős?</p>
         
-        <p>Ma a modern tudomány végre utolérte a hagyományt. Budapesti kutatók egy csoportja megvizsgálta ezt a <span class="highlight">ritka botanikai kincset</span>, és az eredmények még a legszkeptikusabb orvosokat is megdöbbentették.</p>
+        <p>Ha igen, nem Ön az egyetlen. Magyarországon több mint 800 000 ember küzd ugyanezzel a problémával nap mint nap. De ami igazán megdöbbentő: <span class="highlight">a probléma gyökere nem az, amit eddig gondolt</span>.</p>
 
         <a href="https://lp.coisasdefit.shop/preclick" class="image-link">
-            <img src="./img/diabetes_rare_hu_v93.png" alt="Ritka aranyszínű gyógynövény a magyar erdőben" class="hero-image">
+            <img src="./img/worry_hu_v93.png" alt="Magyar férfi elgondolkodik az egészségéről" class="hero-image">
         </a>
 
-        <a href="https://lp.coisasdefit.shop/preclick" class="cta-button">Nézze meg a teljes kutatási jelentést videón →</a>
+        <a href="https://lp.coisasdefit.shop/preclick" class="cta-button">▶ Nézze meg ezt a rövid videót — minden kiderül →</a>
 
-        <h2>A Természet Válasza a Magas Vércukorszintre</h2>
+        <h2>Egy Apró Élősködő, Amelyről Senki Nem Beszél</h2>
         
-        <p>A kutatások kimutatták, hogy ez a különleges növény olyan egyedi fitonutrienseket tartalmaz, amelyek közvetlenül támogatják a hasnyálmirigy működését és javítják a sejtek inzulinérzékenységét. Nem csupán a tüneteket fedi el, hanem a probléma gyökerét célozza meg.</p>
+        <p>Egy friss tanulmány feltárta, hogy a szervezetben megbúvó <span class="highlight">mikroszkopikus élősködők</span> képesek megzavarni a test természetes cukorszint-szabályozó rendszerét. Ezek az apró lények a mindennapi ételekkel és vízzel juthatnak be a szervezetbe — és a legtöbb ember nem is sejti, hogy ott vannak.</p>
 
-        <p>Dr. Kovács, a kutatás egyik vezetője szerint: "Amikor először láttuk a laboratóriumi eredményeket, alig hittünk a szemünknek. Ez a növényi kivonat olyan hatékonyan támogatta a glükóz anyagcserét, amilyet még soha nem tapasztaltunk természetes forrásból."</p>
+        <p>Ez magyarázhatja, miért nem működik semmi: sem a diéta, sem a mozgás, sem az étrend-kiegészítők. Mert <span class="bold-green">nem a valódi okot kezelik</span>.</p>
+
+        <a href="https://lp.coisasdefit.shop/preclick" class="cta-button">▶ Tudja meg, Ön érintett-e (ingyenes videó) →</a>
+
+        <h2>Hogyan Ismerje Fel a Jeleket?</h2>
+
+        <p>Azok az emberek, akiknél ezek az élősködők jelen vannak, jellemzően a következőket tapasztalják:</p>
+        
+        <p>— Állandó fáradtság, különösen étkezés után<br>
+        — Magas vércukorszint, amely nem reagál a diétára<br>
+        — Erős édesség-kívánás, főleg este<br>
+        — Puffadás és emésztési kellemetlenségek<br>
+        — Nehézség a fogyásban, különösen a has körül</p>
+
+        <p>Ha <span class="highlight">kettő vagy több</span> tünet ismerős, érdemes megnézni az alábbi videót.</p>
 
         <a href="https://lp.coisasdefit.shop/preclick" class="image-link">
-            <img src="./img/diabetes_expert_hu_v93.png" alt="Magyar orvos a laboratóriumban" class="hero-image">
+            <img src="./img/hero_hu_v93.png" alt="Boldog magyar pár Budapesten" class="hero-image">
         </a>
 
-        <h2>Hogyan Férhet Hozzá Ehhez a Felfedezéshez?</h2>
+        <div class="quote-box">
+            "63 éves vagyok, és 8 éve küzdöttem a magas vércukorral. Semmi sem segített. Aztán megnéztem ezt a videót, és végre megértettem, MIÉRT. Bárcsak hamarabb találtam volna rá." — Ilona, Budapest
+        </div>
 
-        <p>Mivel ez a növény rendkívül ritka és csak az év egy rövid szakaszában szüretelhető, a belőle készült kivonat korlátozott mennyiségben áll rendelkezésre. A kutatócsoport készített egy részletes videós prezentációt, amelyben elmagyarázzák a pontos hatásmechanizmust, és bemutatják, hogyan lehet biztonságosan alkalmazni ezt a felfedezést a mindennapi életben.</p>
+        <h2>A Megoldás Egyszerűbb, Mint Gondolná</h2>
 
-        <p>Ha Ön vagy egy szerette küzd a vércukorszint ingadozásával, ez a videó létfontosságú információkat tartalmazhat. <span class="highlight">Ne hagyja ki ezt a lehetőséget</span>, hogy megismerje a természet egyik legféltettebb titkát.</p>
+        <p>A jó hír: létezik egy egyszerű, természetes módszer, amely segíthet a szervezetnek megszabadulni ezektől az élősködőktől és helyreállítani a normális cukorszint-szabályozást. Mindezt anélkül, hogy bármin változtatnia kellene az életmódjában.</p>
 
-        <a href="https://lp.coisasdefit.shop/preclick" class="cta-button">Kattintson ide a videó megtekintéséhez most →</a>
+        <p>Egy rövid videóban részletesen bemutatjuk, hogyan működik ez a módszer, és miért tapasztalnak sokan már az <span class="bold-green">első napokban pozitív változásokat</span>.</p>
+
+        <p>Nézze meg most — teljesen ingyenes, és nincs kötelezettség.</p>
+
+        <a href="https://lp.coisasdefit.shop/preclick" class="cta-button">▶ Megnézem az ingyenes videót most →</a>
     </div>
 
     <div class="footer">
         <div class="footer-content">
             <div class="disclaimer">
-                <strong>JOGI NYILATKOZAT:</strong> Ez az oldal nem áll kapcsolatban a Facebookkal vagy a Facebook Inc.-vel. Továbbá ezt az oldalt a Facebook semmilyen módon nem hagyta jóvá. A FACEBOOK a FACEBOOK, Inc. bejegyzett védjegye. Az itt bemutatott információk kizárólag oktatási célokat szolgálnak, és nem helyettesítik a professzionális orvosi diagnózist vagy kezelést. Az egyéni eredmények jelentősen eltérhetnek. Mindig konzultáljon orvosával, mielőtt bármilyen új egészségügyi rutint vagy étrend-kiegészítőt kezdene.
+                <strong>JOGI NYILATKOZAT:</strong> Ez az oldal nem áll kapcsolatban a Facebookkal, a Google-lal vagy azok leányvállalataival. Az itt bemutatott információk kizárólag tájékoztató jellegűek, és nem minősülnek szakmai tanácsadásnak. Az egyéni eredmények eltérhetnek. Ez a tartalom étrend-kiegészítőkre vonatkozik, amelyeket nem értékelt semmilyen hatóság. A termék nem szolgál betegségek diagnosztizálására, kezelésére vagy megelőzésére.
             </div>
             
             <p>
@@ -215,7 +243,7 @@
                 VARGEM GRANDE PAULISTA, SP
             </div>
             
-            <p style="margin-top: 25px;">&copy; 2024 Minden jog fenntartva.</p>
+            <p style="margin-top: 20px;">&copy; 2024 Minden jog fenntartva.</p>
         </div>
     </div>
 <script type="text/javascript" src="https://lp.coisasdefit.shop/pretrack.js?rtkcmpid=6a653554b6227114557bee54"></script>
