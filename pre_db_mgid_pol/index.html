@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zdrowie Dziś | Lekarz Który Stracił Licencję za Ujawnienie Prawdy o Cukrzycy</title>
+    <title>Nauka i Zdrowie | Prawdziwa Przyczyna Cukrzycy, Którą Chcieli Ukryć</title>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -12,32 +12,33 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            line-height: 1.7;
+            font-size: 17px;
         }
         .advertorial-bar {
             background-color: #2c3e50;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            font-size: 0.9em;
+            font-size: 0.85em;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
+        .container {
+            max-width: 780px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
         h1 {
             color: #d32f2f;
-            font-size: 2.2em;
+            font-size: 1.95em;
             text-align: center;
-            margin-bottom: 10px;
-            line-height: 1.2;
+            margin-bottom: 12px;
+            line-height: 1.25;
         }
         .deck {
             font-size: 1.05em;
@@ -46,23 +47,29 @@
             padding-left: 14px;
             margin: 12px 0 20px;
             font-style: italic;
-            line-height: 1.55;
+            line-height: 1.6;
+        }
+        .author-box {
+            background-color: #f9f9f9;
+            padding: 13px 15px;
+            border-left: 4px solid #2c3e50;
+            margin-bottom: 22px;
+            font-size: 0.88em;
+            color: #555;
         }
         h2 {
             color: #2c3e50;
-            font-size: 1.5em;
-            margin-top: 30px;
+            font-size: 1.4em;
+            margin-top: 28px;
             border-bottom: 2px solid #eee;
             padding-bottom: 10px;
+            margin-bottom: 14px;
         }
-        p {
-            font-size: 1.1em;
-            margin-bottom: 15px;
-        }
+        p { margin-bottom: 16px; }
         .image-link {
             display: block;
             text-align: center;
-            margin: 25px 0;
+            margin: 22px 0;
             transition: transform 0.2s ease;
         }
         .image-link:hover { transform: scale(1.02); }
@@ -74,44 +81,17 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             cursor: pointer;
         }
-        .cta-button {
-            display: block;
-            width: 90%;
-            max-width: 500px;
-            margin: 30px auto;
-            padding: 18px 20px;
-            background: linear-gradient(to bottom, #FFD700, #FFA500);
-            color: #000;
-            text-decoration: none;
-            font-size: 1.4em;
-            font-weight: 900;
-            border-radius: 8px;
+        .pull-quote {
+            border-top: 2px solid #1a1a1a;
+            border-bottom: 2px solid #1a1a1a;
+            margin: 26px 0;
+            padding: 16px 20px;
+            font-size: 1.15em;
+            font-style: italic;
+            color: #1a1a1a;
+            line-height: 1.5;
             text-align: center;
-            text-transform: uppercase;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-            border: 2px solid #e69500;
-            transition: all 0.3s ease;
-            animation: pulse 2s infinite;
         }
-        .cta-button:hover {
-            background: linear-gradient(to bottom, #FFA500, #FF8C00);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.03); }
-            100% { transform: scale(1); }
-        }
-        .author-box {
-            display: flex;
-            align-items: center;
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-left: 4px solid #2c3e50;
-            margin-bottom: 20px;
-        }
-        .author-info { font-size: 0.9em; color: #555; }
         .danger-box {
             background-color: #fff5f5;
             border: 1px solid #ffcccc;
@@ -119,7 +99,7 @@
             padding: 15px 20px;
             margin: 20px 0;
             font-size: 1em;
-            line-height: 1.6;
+            line-height: 1.65;
         }
         .danger-box strong { color: #d32f2f; }
         .highlight-box {
@@ -129,33 +109,56 @@
             padding: 15px 20px;
             margin: 20px 0;
             font-size: 1em;
-            line-height: 1.6;
+            line-height: 1.65;
         }
         .highlight-box strong { color: #7a5c00; }
-        .pull-quote {
-            border-top: 2px solid #1a1a1a;
-            border-bottom: 2px solid #1a1a1a;
-            margin: 28px 0;
-            padding: 16px 20px;
-            font-size: 1.2em;
-            font-style: italic;
-            color: #1a1a1a;
-            line-height: 1.45;
+        .cta-button {
+            display: block;
+            width: 90%;
+            max-width: 500px;
+            margin: 30px auto;
+            padding: 20px 20px;
+            background: linear-gradient(to bottom, #FFD700, #FFA500);
+            color: #000;
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: 900;
+            border-radius: 8px;
             text-align: center;
+            text-transform: uppercase;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            border: 2px solid #e69500;
+            animation: pulse 2s infinite;
+            line-height: 1.3;
+        }
+        .cta-button:hover {
+            background: linear-gradient(to bottom, #FFA500, #FF8C00);
+            transform: translateY(-2px);
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+        .cta-sub {
+            text-align: center;
+            font-size: 0.82em;
+            color: #888;
+            margin-top: 8px;
         }
         .footer {
             background-color: #222;
             color: #aaa;
             text-align: center;
-            padding: 40px 20px;
-            font-size: 0.85em;
+            padding: 36px 20px;
+            font-size: 0.82em;
             margin-top: 40px;
         }
-        .footer-content { max-width: 800px; margin: 0 auto; }
+        .footer-content { max-width: 780px; margin: 0 auto; }
         .disclaimer-box {
             border: 1px solid #444;
-            padding: 15px;
-            margin-bottom: 20px;
+            padding: 14px;
+            margin-bottom: 18px;
             text-align: justify;
             font-size: 0.8em;
             line-height: 1.4;
@@ -163,105 +166,107 @@
         }
         .footer a { color: #ddd; text-decoration: none; margin: 0 10px; }
         .footer a:hover { text-decoration: underline; color: #fff; }
-        .company-info { margin-top: 20px; font-weight: bold; color: #ccc; }
+        .company-info { margin-top: 18px; font-weight: bold; color: #ccc; }
         @media (max-width: 600px) {
-            .container { margin: 0; padding: 15px; border-radius: 0; }
-            h1 { font-size: 1.8em; }
-            .cta-button { font-size: 1.1em; width: 100%; padding: 15px 10px; }
+            .container { margin: 0; padding: 16px; border-radius: 0; }
+            h1 { font-size: 1.55em; }
+            .cta-button { font-size: 1.1em; width: 100%; }
         }
     </style>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
 </head>
 <body>
-    <div class="advertorial-bar">
-        ADVERTORIAL | TREŚĆ SPONSOROWANA
+
+<div class="advertorial-bar">
+    ADVERTORIAL | TREŚĆ SPONSOROWANA
+</div>
+
+<div class="container">
+
+    <h1>Lekarz, Który Stracił Licencję, Bo Ujawnił Swoim Pacjentom Prawdziwą Przyczynę Cukrzycy Typu 2</h1>
+
+    <div class="deck">
+        Szokujące odkrycie krąży po całej Polsce. Przemysł farmaceutyczny zrobił wszystko, żeby je zniszczyć. Ale teraz jest tutaj — a to, co zobaczysz w filmie, na zawsze zmieni twój pogląd na cukrzycę.
     </div>
 
-    <div class="container">
-
-        <h1>Lekarz Stracił Licencję za Ujawnienie „Świętego Oleju" Pacjentom z Cukrzycą — i Dlaczego Przemysł Farmaceutyczny Chciał to Zatuszować</h1>
-
-        <div class="deck">
-            Ta historia obiega całą Polskę. Naturalny olej wzmiankowany w Biblii od tysięcy lat może zmieniać metabolizm cukru — i pewien odważny lekarz zapłacił za to najwyższą cenę zawodową. Wszystko jest wyjaśnione w bezpłatnym filmie, który może wkrótce zniknąć z internetu.
-        </div>
-
-        <div class="author-box">
-            <div class="author-info">
-                <strong>Opublikowano:</strong> Dziś | <strong>Autor:</strong> Redakcja Zdrowie Dziś | <strong>Czas czytania:</strong> 3 minuty
-            </div>
-        </div>
-
-        <a href="https://lp.coisasdefit.shop/preclick" class="image-link">
-            <img src="./img/db2.webp" alt="Naturalny mechanizm stabilizacji cukru" class="hero-image">
-        </a>
-
-        <p>Najpierw tylko trochę wyższy cukier na rutynowym badaniu. Potem lekarz zwiększa dawkę metforminy. Potem lista zakazanych potraw rośnie. Potem rodzina zaczyna decydować za Ciebie, co możesz jeść na Wigilię. A potem — pewnego dnia — nie ty już kontrolujesz swoje życie. Cukrzyca to robi za Ciebie.</p>
-
-        <p>Miliony Polaków powyżej 60. roku życia żyją w tym cichym strachu. Nie strachu przed śmiercią — ale przed utratą niezależności. Przed dniem, w którym ktoś inny będzie musiał towarzyszyć Ci wszędzie. Przed amputacją, przed insuliną do końca życia, przed tym, że stajesz się ciężarem dla rodziny. I przez lata wmawiano Ci, że to nieuniknione. <strong>Ale to nieprawda.</strong></p>
-
-        <div class="danger-box">
-            <strong>⚠ Czego żaden lekarz Ci nie powie:</strong> Cukrzyca typu 2 nie jest wyrokiem. Jest wynikiem konkretnego procesu wewnętrznego — który można zatrzymać, jeśli wiesz, co robić i kiedy.
-        </div>
-
-        <h2>Odkrycie, Które Zmienia Wszystko</h2>
-
-        <p>Pewien lekarz rodzinny z ponad 30-letnim doświadczeniem zaczął zauważać coś dziwnego u swoich pacjentów: ci, którzy stosowali ten naturalny olej — z tradycji rodzinnej, przypadkowo lub za radą starszego zielarza — uzyskiwali wyniki metabolizmu glukozy, których konwencjonalna medycyna nie potrafiła wyjaśnić.</p>
-
-        <p>Zamiast ignorować dowody, zaczął je dokumentować. Stopniowo zaczął polecać go innym pacjentom. Wyniki pojawiały się dalej. Wieść się rozeszła. I nieuchronnie dotarła do uszu Izby Lekarskiej.</p>
-
-        <div class="pull-quote">
-            "Nic nie sprzedawałem. Mówiłem tylko prawdę ludziom, którzy na nią zasługiwali."
-        </div>
-
-        <p>Postępowanie dyscyplinarne było szybkie. Licencja — odebrana. Oficjalne uzasadnienie: zalecanie leczenia bez naukowego potwierdzenia. Ale był jeden szczegół, który nie pasował wielu jego kolegom: żaden z jego pacjentów nie doznał żadnej krzywdy. Wręcz przeciwnie.</p>
-
-        <a href="https://lp.coisasdefit.shop/preclick" class="image-link">
-            <img src="./img/herodb.webp" alt="Święty Olej — naturalne odkrycie" class="hero-image">
-        </a>
-
-        <h2>Czym Jest Ten „Święty Olej"?</h2>
-
-        <p>Nie jest lekiem. Nie wymaga recepty. Nie wymaga radykalnej zmiany diety ani stylu życia. Jest naturalnym elementem, zakorzenionym w tysiącletnich tradycjach — który niezależne badania dopiero zaczęły poważnie analizować.</p>
-
-        <p>Według relacji osób, które go stosowały, i udokumentowanych przypadków tego lekarza, mechanizm działania jest bezpośredni: działa na komórki, reaktywując ich zdolność do prawidłowego reagowania na glukozę. Nie maskuje problemu — atakuje go u korzenia.</p>
-
-        <p>Co więcej — ten olej nie jest wynalazkiem nowoczesnej medycyny. Jest wzmiankowany w <strong>30. rozdziale Księgi Wyjścia w Biblii</strong> i był dostępny przez tysiąclecia. Czego nikt Ci nie powiedział, to jak używać go dokładnie w przypadku cukrzycy typu 2 — i właśnie to ujawnia lekarz w tym filmie.</p>
-
-        <div class="highlight-box">
-            <strong>Dlaczego nikt o tym nie mówi?</strong> Naturalnego oleju nie można opatentować. Nie generuje miliardów dla firm farmaceutycznych. Nie wymaga kosztownych wizyt lekarskich ani coraz silniejszych leków. I właśnie dlatego przemysł woli, żebyś nigdy się o tym nie dowiedział.
-        </div>
-
-        <p>Ten lekarz zdecydował się upublicznić to odkrycie w <strong>bezpłatnym filmie</strong>, który wyjaśnia wszystko szczegółowo: skąd pochodzi ten olej, jak dokładnie działa na komórki i — przede wszystkim — jak prawidłowo go stosować, aby uzyskać udokumentowane wyniki.</p>
-
-        <p><strong>Ten film jest wszystkim, czego potrzebujesz.</strong> Żadnych wizyt, żadnych recept, żadnych kosztownych procedur. Tylko kompletne informacje — wyjaśnione w sposób jasny i przystępny — abyś mógł działać już dziś, zanim szkody staną się nieodwracalne.</p>
-
-        <div class="danger-box">
-            <strong>⚠ Uwaga:</strong> Film zawiera informacje, które część przemysłu farmaceutycznego wolałaby nie upubliczniać. Nie ma gwarancji, że długo pozostanie dostępny w internecie. Jeśli tu jesteś, obejrzyj go teraz — nie odkładaj na jutro czegoś, co dotyczy Twojego zdrowia i niezależności.
-        </div>
-
-        <a href="https://lp.coisasdefit.shop/preclick" class="cta-button">▶ OBEJRZYJ FILM TERAZ</a>
-
+    <div class="author-box">
+        <strong>Opublikowano:</strong> Dzisiaj &nbsp;|&nbsp; <strong>Redakcja Nauka i Zdrowie</strong> &nbsp;|&nbsp; Czas czytania: 2 minuty
     </div>
 
-    <div class="footer">
-        <div class="footer-content">
-            <div class="disclaimer-box">
-                <strong>WAŻNE ZASTRZEŻENIE:</strong> Ta strona internetowa nie jest częścią serwisu Facebook ani Facebook Inc. Strona ta nie jest w żaden sposób zatwierdzona przez Facebook. FACEBOOK jest znakiem towarowym Facebook, Inc. Treść tej strony służy wyłącznie celom informacyjnym i edukacyjnym. Informacje tu zawarte nie stanowią porady medycznej i nie zastępują konsultacji z wykwalifikowanym specjalistą ds. zdrowia. Wyniki mogą się różnić i nie są gwarantowane. <strong>Historia i postacie przedstawione w tym artykule mają charakter ilustracyjny.</strong> Zawsze konsultuj się z lekarzem przed rozpoczęciem jakiegokolwiek nowego programu zdrowotnego.
-            </div>
+    <a href="https://lp.coisasdefit.shop/preclick" class="image-link">
+        <img src="./img/heroo.webp" alt="Prawdziwa przyczyna cukrzycy" class="hero-image">
+    </a>
 
-            <p>
-                <a href="./privacy.html">Polityka Prywatności</a> |
-                <a href="./terms.html">Warunki Użytkowania</a> |
-                <a href="mailto:contato@lmsuplementos.com.br">Kontakt</a>
-            </p>
+    <p>Każdego ranka budzisz się, a twoja pierwsza myśl dotyczy poziomu cukru we krwi. Metformina. Insulina. Lista zakazanych pokarmów, która jest coraz dłuższa. Nogi, które w nocy drętwieją. Oczy, które widzą coraz gorzej. I ten cichy strach — nie przed śmiercią, ale przed tym dniem, kiedy nie będziesz już w stanie samodzielnie o siebie zadbać.</p>
 
-            <div class="company-info">
-                L.M. SUPLEMENTOS LTDA - ME | CNPJ: 65.108.072/0001-00<br>
-                Rua Augusta, 1500 - Consolacao, São Paulo - SP, Brazylia
-            </div>
+    <p>Od lat mówią ci, że ten stan jest nieuleczalny. Że musisz go zaakceptować. Że leki są jedyną drogą. <strong>Ale co, jeśli wszyscy się mylili — łącznie z twoim lekarzem?</strong></p>
 
-            <p style="margin-top: 20px;">&copy; 2025 Zdrowie Dziś. Wszelkie prawa zastrzeżone.</p>
-        </div>
+    <div class="danger-box">
+        <strong>⚠ Czego twój lekarz nigdy ci nie powiedział:</strong> Dwóch światowej sławy lekarzy — których nazwiska przemysł farmaceutyczny usunął z internetu — odkryło coś, co wstrząsnęło środowiskiem medycznym. Prawdziwa przyczyna cukrzycy typu 2 jest zupełnie inna, niż myślałeś. I z powodu ich odkrycia zostali natychmiast uciszeni.
     </div>
-    <script type="text/javascript" src="https://lp.coisasdefit.shop/pretrack.js?rtkcmpid=6a50d31c69658e20d338416c"></script>
+
+    <h2>Odkrycie, Które Próbowali Usunąć</h2>
+
+    <p>Gdy ci dwaj lekarze podzielili się swoim odkryciem z opinią publiczną, reakcja była natychmiastowa. Ich filmy zostały usunięte. Konta skasowane. Skontaktowali się z nimi prawnicy. Duże firmy farmaceutyczne zrobiły wszystko, żeby ta informacja się nie rozprzestrzeniła.</p>
+
+    <p>Dlaczego taka panika? Bo gdyby ludzie znali prawdę, nikt nie kupowałby metforminy, insuliny ani tych drogich leków, które leczą tylko objawy — nigdy przyczynę.</p>
+
+    <div class="pull-quote">
+        "Straciliśmy licencje. Usunęli nasze filmy. Ale prawdy już nie można cofnąć."
+    </div>
+
+    <a href="https://lp.coisasdefit.shop/preclick" class="image-link">
+        <img src="./img/img22.webp" alt="Prawdziwa przyczyna i rozwiązanie" class="hero-image">
+    </a>
+
+    <a href="https://lp.coisasdefit.shop/preclick" class="cta-button">
+        ▶ OBEJRZYJ FILM TERAZ
+    </a>
+    <p class="cta-sub">Bezpłatny dostęp · Dostępne przez ograniczony czas</p>
+
+    <h2>Co Dokładnie Zawiera Film?</h2>
+
+    <p>Zanim definitywnie ich uciszono, ci dwaj lekarze nagrali szczegółowy film. Wyjaśniają w nim prawdziwą przyczynę cukrzycy typu 2 — która jest szokująco inna od tego, co myślałeś — oraz zaskakująco proste naturalne rozwiązanie, stosowane od pokoleń w miejscu, gdzie cukrzyca jest pojęciem niemal nieznanym.</p>
+
+    <div class="highlight-box">
+        <strong>Co znajdziesz w filmie?</strong> Pełne wyjaśnienie prawdziwej przyczyny. Naturalne rozwiązanie, które firmy farmaceutyczne chciały pogrzebać. I to, jak możesz je zastosować jeszcze dziś — w domu, bez recepty, bez interwencji medycznej.
+    </div>
+
+    <div class="danger-box">
+        <strong>⚠ Ostrzeżenie:</strong> Film zawiera informacje, których przemysł farmaceutyczny nie chce, żebyś zobaczył. Już kilka razy próbowano go usunąć. Jeśli jest teraz dostępny — obejrzyj go natychmiast. Nie odkładaj na jutro.
+    </div>
+
+    <a href="https://lp.coisasdefit.shop/preclick" class="cta-button">
+        ▶ OBEJRZYJ FILM TERAZ
+    </a>
+    <p class="cta-sub">Bezpłatny dostęp · Dostępne przez ograniczony czas</p>
+
+</div>
+
+<div class="footer">
+    <div class="footer-content">
+        <div class="disclaimer-box">
+            <strong>WAŻNE OSTRZEŻENIE:</strong> Ta strona internetowa nie jest częścią serwisu Facebook ani Facebook Inc. Ta strona nie jest w żaden sposób wspierana przez Facebook. Ta strona i jej treść służą wyłącznie celom informacyjnym i edukacyjnym. Informacje zawarte tutaj nie mogą być traktowane jako porada medyczna. Wyniki mogą się różnić i nie są gwarantowane. <strong>Historia i osoby przedstawione w artykule służą celom ilustracyjnym.</strong> Zawsze skonsultuj się z lekarzem przed rozpoczęciem jakiegokolwiek nowego programu zdrowotnego.
+        </div>
+        <p>
+            <a href="./privacy.html">Polityka prywatności</a> |
+            <a href="./terms.html">Warunki użytkowania</a> |
+            <a href="mailto:contato@hyperelitedigital.com.br">Kontakt</a>
+        </p>
+        <div class="company-info">
+            FONTS NEXUS LTDA<br>
+            CNPJ: 67.232.158/0001-68<br>
+            Brasil
+        </div>
+        <p style="margin-top: 18px;">&copy; 2025 Nauka i Zdrowie. Wszelkie prawa zastrzeżone.</p>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://lp.coisasdefit.shop/pretrack.js?rtkcmpid=6a67c403880f3130002a4798"></script>
 </body>
 </html>
